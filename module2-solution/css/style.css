@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 40%;
+    right: 0;
+    top: 0;
+    padding: 5px 0;
+    position: absolute;
+    margin: 0;
+}
+
+section {
+    width: 32%;
+    padding: 50px 10px 10px 10px;
+    float: left;
+    background-color: #999999;
+    border: 1px solid black;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+section:last-of-type {
+    margin-right: 0;
+}
+
+section:nth-of-type(1) h2 {
+    background-color: #D59898;
+}
+
+section:nth-of-type(2) h2 {
+    background-color: #C14543;
+    color: white;
+}
+
+section:nth-of-type(3) h2 {
+    background-color: #E5D198;
+}
+
+
+/********** Desktop view only **********/
+
+@media (min-width: 992px) {}
+
+
+/********** Tablet view only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 49%;
+    }
+    section:nth-of-type(2) {
+        margin-right: 0;
+    }
+    section:nth-of-type(3) {
+        width: 100%;
+    }
+    section:nth-of-type(3) h2 {
+        width: 20%;
+    }
+}
+
+
+/********** Mobile view only **********/
+
+@media (max-width: 767px) {
+    section {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    h2 {
+        width: 27%;
+    }
+}
